@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+    background: url("bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+    color: white;
+}
+
+/* 🔝 Header مع صورة */
+.header {
+    height: 250px;
+    background: url("bg.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px black;
+}
+
+/* 🌐 Container */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* 📦 Cards */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 220px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.05);
+    background: rgba(255,255,255,0.2);
+}
+
+/* 🔘 Buttons */
+.buttons {
+    text-align: center;
+    margin: 30px;
+}
+
+.buttons button {
+    background: linear-gradient(45deg, #00cec9, #0984e3);
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00cec9;
+}
+
+/* 📄 PDF Box */
+.pdf-box {
+    background: rgba(255,255,255,0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 85%;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+/* 🎬 Animation */
+.fade {
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* 🔙 Bouton retour */
+button {
+    cursor: pointer;
+}
+/* 🔙 Bouton retour */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(45deg, #ff7675, #d63031);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.back-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff7675;
+}
+.back-btn:active {
+    transform: scale(0.95);
+}
+h1 {
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px; /* 👈 هذا الحل */
+    color: white;
+}

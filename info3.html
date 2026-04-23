@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Informatique 3ème</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function show(type) {
+    document.getElementById("cours").style.display = "none";
+    document.getElementById("exercices").style.display = "none";
+
+    document.getElementById(type).style.display = "block";
+}
+</script>
+</head>
+
+<body>
+<a href="index.html">
+    <button class="back-btn">⬅ Retour</button>
+</a>
+
+<h1>⚛️ Informatique - 3ème Année</h1>
+
+<div class="buttons">
+    <button onclick="show('cours')">📘 Cours</button>
+    <button onclick="show('exercices')">📝 Exercices</button>
+</div>
+
+<!-- 📘 Cours -->
+<div id="cours" style="display:none">
+
+<div class="pdf-box">
+    <h3>Leçon 1</h3>
+    <iframe src="physique_cours.pdf" width="100%" height="400"></iframe>
+</div>
+
+</div>
+
+<!-- 📝 Exercices -->
+<div id="exercices" style="display:none">
+
+<div class="pdf-box">
+    <h3>Série 1</h3>
+    <iframe src="physique_exercice.pdf" width="100%" height="400"></iframe>
+</div>
+
+</div>
+
+</body>
+</html>
